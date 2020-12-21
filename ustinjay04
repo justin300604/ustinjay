@@ -1,0 +1,25 @@
+// ==UserScript==
+// @name         KissAnimeUnhideVideo2
+// @namespace    http://tampermonkey.net/
+// @version      1.0
+// @description  Set the video element on KissAnime websites back to inline if it isn't already
+// @author       DaijoubuKirameki
+// @match        https://kissanime.ru/Anime/*
+// ==/UserScript==
+
+(function() {
+    'use strict';
+    const videoDiv = document.getElementById("divContentVideo");
+    if (videoDiv && videoDiv.style.display != "inline") {
+        videoDiv.style.display = "inline";
+    }
+})();
+
+
+(function() {
+    'use strict';
+    const videoDiv = document.getElementById("divVideo");
+    if (videoDiv && videoDiv.style.display != "inline") {
+        videoDiv.style.display = "inline";
+    }
+})();
